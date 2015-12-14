@@ -1,0 +1,59 @@
+2015-12-14 12:14:10,472 WARN  [SoapUI] Missing folder [C:\Users\Ajinkya\workspace\functional-test-ticket-reserve\.\ext] for external libraries
+2015-12-14 12:14:10,745 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Ajinkya\soapui-settings.xml]
+2015-12-14 12:14:11,892 INFO  [WsdlProject] Loaded project from [file:/C:/Users/Ajinkya/workspace/functional-test-ticket-reserve/soapui-project.xml]
+2015-12-14 12:14:11,892 WARN  [WsdlProject] Project 'functional-test-ticket-reserve' is from a newer version (5.2.1) of SoapUI than this (4.6.4) and parts of it may be incompatible or incorrect. Saving this project with this version of SoapUI may cause it to function differently.
+2015-12-14 12:14:12,614 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [functional-test-ticket-reserve]
+2015-12-14 12:14:12,616 INFO  [SoapUITestCaseRunner] Running Project [functional-test-ticket-reserve], runType = SEQUENTIAL
+2015-12-14 12:14:12,633 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [list-tickets]
+2015-12-14 12:14:12,659 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-0]
+2015-12-14 12:14:17,593 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:17,593 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-1]
+2015-12-14 12:14:17,600 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:17,600 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-2]
+2015-12-14 12:14:17,606 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:17,606 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-3]
+2015-12-14 12:14:17,611 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:17,611 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [list-tickets], time taken: 4835ms, status: FINISHED
+2015-12-14 12:14:17,614 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hold-and-release-ticket]
+2015-12-14 12:14:17,615 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-0]
+2015-12-14 12:14:17,621 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:17,621 INFO  [SoapUITestCaseRunner] running step [Hold Tickets for Level 0]
+2015-12-14 12:14:18,220 INFO  [log] -489259270
+2015-12-14 12:14:18,231 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:18,231 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2015-12-14 12:14:18,231 INFO  [SoapUITestCaseRunner] running step [Wait for hold to expire]
+2015-12-14 12:14:28,233 INFO  [SoapUITestCaseRunner] running step [Book Tickets using Hold Id (fails)]
+2015-12-14 12:14:28,246 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2015-12-14 12:14:28,247 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-0-post]
+2015-12-14 12:14:28,256 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,258 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hold-and-release-ticket], time taken: 10039ms, status: FINISHED
+2015-12-14 12:14:28,260 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hold-and-reserve-ticket]
+2015-12-14 12:14:28,261 INFO  [SoapUITestCaseRunner] running step [Hold Tickets for Level 0]
+2015-12-14 12:14:28,299 INFO  [log] -1159048965
+2015-12-14 12:14:28,301 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,301 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2015-12-14 12:14:28,301 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-0]
+2015-12-14 12:14:28,309 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,309 INFO  [SoapUITestCaseRunner] running step [Book Tickets using Hold Id]
+2015-12-14 12:14:28,327 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,327 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2015-12-14 12:14:28,327 INFO  [SoapUITestCaseRunner] running step [Hold Tickets for Level 1]
+2015-12-14 12:14:28,363 INFO  [log] -1048602990
+2015-12-14 12:14:28,364 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,364 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2015-12-14 12:14:28,364 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-1]
+2015-12-14 12:14:28,374 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,374 INFO  [SoapUITestCaseRunner] running step [Book Tickets using Hold Id -level1]
+2015-12-14 12:14:28,385 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,385 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2015-12-14 12:14:28,385 INFO  [SoapUITestCaseRunner] running step [Hold Tickets for Level 2]
+2015-12-14 12:14:28,423 INFO  [log] 1870952734
+2015-12-14 12:14:28,424 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,424 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2015-12-14 12:14:28,424 INFO  [SoapUITestCaseRunner] running step [Get Number of tickets Available-level-2]
+2015-12-14 12:14:28,430 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,430 INFO  [SoapUITestCaseRunner] running step [Book Tickets using Hold Id -level2]
+2015-12-14 12:14:28,441 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-12-14 12:14:28,442 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2015-12-14 12:14:28,442 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hold-and-reserve-ticket], time taken: 43ms, status: FINISHED
+2015-12-14 12:14:28,443 INFO  [SoapUITestCaseRunner] Project [functional-test-ticket-reserve] finished with status [FINISHED] in 15821ms
