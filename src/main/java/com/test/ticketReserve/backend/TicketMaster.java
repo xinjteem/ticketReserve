@@ -94,7 +94,7 @@ public class TicketMaster {
 				seatMap[seatingLevel][location]=null;
 			}
 			trimMaster();
-			printMaster();
+			//printMaster();
 		}
 	}
 
