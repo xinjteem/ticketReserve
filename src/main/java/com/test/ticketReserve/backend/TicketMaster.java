@@ -26,8 +26,10 @@ public class TicketMaster {
 	}
 	
 	public static TicketMaster getInstance(){
-		if (instance == null){
-			instance = new TicketMaster();
+		synchronized(TicketMaster.class){
+			if (instance == null){
+				instance = new TicketMaster();
+			}
 		}
 		return instance;
 	}

@@ -17,8 +17,10 @@ public class TicketReserveMaster {
 	}
 	
 	public static TicketReserveMaster getInstance(){
-		if(instance == null){
-			instance = new TicketReserveMaster();
+		synchronized(TicketReserveMaster.class){
+			if(instance == null){
+				instance = new TicketReserveMaster();
+			}
 		}
 		return instance;
 	}
