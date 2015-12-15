@@ -8,7 +8,8 @@ import com.test.ticketReserve.utils.ExpiringMap;
 public class TicketHoldMaster {
 	
 	private static TicketHoldMaster instance;
-	private ExpiringMap<Integer,SeatHold> backingMap = new ExpiringMap<Integer,SeatHold>(2000);
+	int holdDuration = Integer.parseInt(System.getProperty("ticket.hold.duration", "5000"));
+	private ExpiringMap<Integer,SeatHold> backingMap = new ExpiringMap<Integer,SeatHold>(holdDuration);
 	
 	private TicketHoldMaster(){
 		
@@ -23,8 +24,7 @@ public class TicketHoldMaster {
 	public void addHold(Integer holdId,SeatHold hold){
 		if(holdId != null){
 			backingMap.put(holdId, hold);
-		}
-			
+		}			
 	}
 	
 	public SeatHold checkHold(Integer holdId){
