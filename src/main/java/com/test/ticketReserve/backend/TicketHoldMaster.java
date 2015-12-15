@@ -15,8 +15,10 @@ public class TicketHoldMaster {
 		
 	}
 	public static TicketHoldMaster getInstance(){
-		if(instance==null){
-			instance = new TicketHoldMaster();
+		synchronized (TicketHoldMaster.class) {
+			if (instance == null) {
+				instance = new TicketHoldMaster();
+			}
 		}
 		return instance;
 	}
@@ -45,9 +47,11 @@ public class TicketHoldMaster {
 	public long getHoldDuration(){
 		return backingMap.getExpirationTime();
 	}
+	
 	public void removeHold(int seatHoldId) {
 		backingMap.remove(seatHoldId);		
 	}
+	
 	public int getSeatsHeldByLevel(int level){
 		Set<Integer> keys = backingMap.keySet();
 		int seatsHeld = 0;
